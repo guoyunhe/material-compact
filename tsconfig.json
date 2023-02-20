@@ -1,0 +1,9 @@
+{
+  "extends": "@tsconfig/vite-react/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "mui-material-compact-theme": ["./src"]
+    },
+    "types": ["node", "jest", "@guoyunhe/react-lib-scripts/global"]
+  }
+}

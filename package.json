@@ -1,0 +1,73 @@
+{
+  "name": "mui-material-compact-theme",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "react",
+    "mui",
+    "material",
+    "theme"
+  ],
+  "homepage": "https://github.com/guoyunhe/mui-material-compact-theme#readme",
+  "bugs": {
+    "url": "https://github.com/guoyunhe/mui-material-compact-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoyunhe/mui-material-compact-theme.git"
+  },
+  "funding": "https://github.com/sponsors/guoyunhe",
+  "license": "GPL-3.0",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "i@guoyunhe.me"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "react-lib-scripts build",
+    "format": "react-lib-scripts format",
+    "lint": "react-lib-scripts lint",
+    "start": "react-lib-scripts start",
+    "test": "react-lib-scripts test",
+    "watch": "react-lib-scripts watch"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "extends": "@guoyunhe/react-lib-scripts"
+  },
+  "jest": {
+    "preset": "@guoyunhe/react-lib-scripts"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@guoyunhe/react-lib-scripts": "^1.0.0",
+    "@mui/material": "^5.11.9",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.0.0",
+    "@tsconfig/vite-react": "^1.0.0",
+    "@types/jest": "^29.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "typescript": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "merge": "^2.1.1"
+  }
+}
