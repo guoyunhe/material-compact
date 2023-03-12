@@ -1,9 +1,7 @@
 # Changelog
 
-## 1.0.0 - 2023-02-20
+## 1.0.0 - 2023-03-12
 
-- Added something
-- Changed something
-- Fixed something
-- Removed something
-- Deprecated something
+- Added `createCompactTheme()` function
+- Added `<LargeTextField/>` component
+- Added style overrides for `<TextField/>` and `<Button/>`, so they have the same height
