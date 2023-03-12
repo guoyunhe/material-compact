@@ -5,8 +5,13 @@
   "keywords": [
     "react",
     "mui",
-    "material",
-    "theme"
+    "material-design",
+    "material-ui",
+    "theme",
+    "small",
+    "compact",
+    "size",
+    "dense"
   ],
   "homepage": "https://guoyunhe.github.io/mui-material-compact/",
   "bugs": {
