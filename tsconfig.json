@@ -4,6 +4,11 @@
     "paths": {
       "mui-material-compact": ["./src"]
     },
-    "types": ["node", "jest", "@guoyunhe/react-lib-scripts/global"]
+    "types": [
+      "node",
+      "jest",
+      "@guoyunhe/react-lib-scripts/global",
+      "@guoyunhe/react-lib-scripts/assets"
+    ]
   }
 }

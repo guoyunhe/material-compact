@@ -64,7 +64,6 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.0.0",
     "@tsconfig/vite-react": "^1.0.0",
-    "@types/deepmerge": "^2.2.0",
     "@types/jest": "^29.0.0",
     "@types/node": "^18.15.0",
     "@types/react": "^18.0.0",
