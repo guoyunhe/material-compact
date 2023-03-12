@@ -8,8 +8,20 @@ npm i mui-material-compact
 
 ## Usage
 
-```ts
-import { hello } from 'mui-material-compact';
+```tsx
+import { ThemeProvider, TextField } from '@mui/material';
+import { createCompactTheme, LargeTextField } from 'mui-material-compact';
 
-hello('world');
+const theme = createCompactTheme({
+  // Your theme options...
+});
+
+<ThemeProvider theme={theme}>
+  <TextField size="small" />
+  <TextField size="medium" />
+  {/* @mui/material doesn't provide this size, you can use our component*/}
+  <LargeTextField />
+</ThemeProvider>;
 ```
+
+👉 [check online preview](https://guoyunhe.github.io/mui-material-compact/)
