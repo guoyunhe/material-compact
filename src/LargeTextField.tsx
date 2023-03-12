@@ -1,7 +1,8 @@
 import { styled, TextField, TextFieldProps } from '@mui/material';
+import { FC } from 'react';
 import { rem } from './helpers';
 
-export const LargeTextField = styled(TextField)<TextFieldProps>(({ theme }) => ({
+export const LargeTextField: FC<TextFieldProps> = styled(TextField)<TextFieldProps>({
   '& .MuiOutlinedInput-input': {
     fontSize: rem(16),
     lineHeight: 26 / 16,
@@ -13,4 +14,4 @@ export const LargeTextField = styled(TextField)<TextFieldProps>(({ theme }) => (
   '& .MuiInputLabel-root': {
     fontSize: rem(16),
   },
-}));
+});
