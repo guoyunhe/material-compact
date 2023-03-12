@@ -1,5 +1,5 @@
 import { createTheme, Theme, ThemeOptions } from '@mui/material';
-import * as merge from 'deepmerge';
+import { deepmerge } from '@mui/utils';
 import { rem } from './helpers';
 
 const compactOptions: ThemeOptions = {
@@ -80,5 +80,5 @@ const compactOptions: ThemeOptions = {
 };
 
 export function createCompactTheme(options: ThemeOptions = {}, ...args: object[]): Theme {
-  return createTheme(merge(compactOptions, options), ...args);
+  return createTheme(deepmerge(compactOptions, options), ...args);
 }
