@@ -1,5 +1,5 @@
 import { Button, TextField, ThemeProvider } from '@mui/material';
-import { createCompactTheme } from 'mui-material-compact-theme';
+import { createCompactTheme } from 'mui-material-compact';
 
 const theme = createCompactTheme();
 

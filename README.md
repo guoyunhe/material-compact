@@ -1,15 +1,15 @@
-# mui-material-compact-theme
+# mui-material-compact
 
 ## Install
 
 ```bash
-npm i mui-material-compact-theme
+npm i mui-material-compact
 ```
 
 ## Usage
 
 ```ts
-import { hello } from 'mui-material-compact-theme';
+import { hello } from 'mui-material-compact';
 
 hello('world');
 ```

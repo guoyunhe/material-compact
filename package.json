@@ -1,5 +1,5 @@
 {
-  "name": "mui-material-compact-theme",
+  "name": "mui-material-compact",
   "version": "1.0.0",
   "description": "",
   "keywords": [
@@ -8,13 +8,13 @@
     "material",
     "theme"
   ],
-  "homepage": "https://github.com/guoyunhe/mui-material-compact-theme#readme",
+  "homepage": "https://github.com/guoyunhe/mui-material-compact#readme",
   "bugs": {
-    "url": "https://github.com/guoyunhe/mui-material-compact-theme/issues"
+    "url": "https://github.com/guoyunhe/mui-material-compact/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guoyunhe/mui-material-compact-theme.git"
+    "url": "git+https://github.com/guoyunhe/mui-material-compact.git"
   },
   "funding": "https://github.com/sponsors/guoyunhe",
   "license": "GPL-3.0",
