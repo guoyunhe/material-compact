@@ -37,7 +37,8 @@
     "lint": "react-lib-scripts lint",
     "start": "react-lib-scripts start",
     "test": "react-lib-scripts test",
-    "watch": "react-lib-scripts watch"
+    "watch": "react-lib-scripts watch",
+    "deploy": "gh-pages -d build"
   },
   "prettier": {
     "printWidth": 100,
@@ -60,6 +61,7 @@
     "@types/jest": "^29.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "typescript": "^4.0.0"
