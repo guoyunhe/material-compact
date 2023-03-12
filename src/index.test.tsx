@@ -1,12 +1,7 @@
-import { render, screen } from '@testing-library/react';
-import { MuiMaterialCompactTheme } from '.';
+import { createCompactTheme } from '.';
 
 describe('<MuiMaterialCompactTheme/>', () => {
   it('render', async () => {
-    render(<MuiMaterialCompactTheme>Hello</MuiMaterialCompactTheme>);
-
-    const elem = await screen.findByText('Hello');
-
-    expect(elem.className).toBe('MuiMaterialCompactTheme');
+    expect(createCompactTheme({})).toMatchSnapshot();
   });
 });
