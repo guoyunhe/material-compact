@@ -10,7 +10,7 @@ npm i mui-material-compact
 
 ```tsx
 import { ThemeProvider, TextField } from '@mui/material';
-import { createCompactTheme, LargeTextField } from 'mui-material-compact';
+import { createCompactTheme } from 'mui-material-compact';
 
 const theme = createCompactTheme({
   // Your theme options...
@@ -19,9 +19,18 @@ const theme = createCompactTheme({
 <ThemeProvider theme={theme}>
   <TextField size="small" />
   <TextField size="medium" />
-  {/* @mui/material doesn't provide this size, you can use our component*/}
-  <LargeTextField />
+  <TextField size="large" />
 </ThemeProvider>;
+```
+
+If you are using TypeScript, modify your tsconfig.json to enable extra size variants:
+
+```json
+{
+  "compilerOptions": {
+    "types": ["mui-material-compact/overrides"]
+  }
+}
 ```
 
 👉 [check online preview](https://guoyunhe.github.io/mui-material-compact/)

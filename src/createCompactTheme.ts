@@ -39,6 +39,21 @@ const compactOptions: ThemeOptions = {
       },
     },
     MuiOutlinedInput: {
+      variants: [
+        {
+          props: { size: 'large' },
+          style: {
+            input: {
+              fontSize: rem(16),
+              lineHeight: 26 / 16,
+              padding: '8px 14px',
+            },
+            '& .MuiOutlinedInput-notchedOutline > legend > span': {
+              fontSize: rem(16 * 0.8),
+            },
+          },
+        },
+      ],
       styleOverrides: {
         root: {
           verticalAlign: 'middle',
@@ -61,6 +76,14 @@ const compactOptions: ThemeOptions = {
       },
     },
     MuiInputLabel: {
+      variants: [
+        {
+          props: { size: 'large' },
+          style: {
+            fontSize: rem(16),
+          },
+        },
+      ],
       styleOverrides: {
         root: {
           fontSize: rem(14),

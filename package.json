@@ -34,7 +34,8 @@
     "dist",
     "CHANGELOG.md",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "overrides.d.ts"
   ],
   "scripts": {
     "build": "react-lib-scripts build",

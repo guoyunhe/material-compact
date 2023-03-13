@@ -1,5 +1,5 @@
 import { Button, createTheme, TextField, ThemeProvider } from '@mui/material';
-import { createCompactTheme, LargeTextField } from 'mui-material-compact';
+import { createCompactTheme } from 'mui-material-compact';
 import {
   DocCodeBlock,
   DocContainer,
@@ -24,10 +24,14 @@ const theme = createCompactTheme({
 </ThemeProvider>
 `;
 
-const largeTextFieldCode = `
-import { LargeTextField } from 'mui-material-compact';
-
-<LargeTextField />
+const tsconfigCode = `
+{
+  "compilerOptions": {
+    "types": [
+      "mui-material-compact/overrides"
+    ]
+  }
+}
 `;
 
 export default function App() {
@@ -52,6 +56,8 @@ export default function App() {
 
       <DocHeading>Usage</DocHeading>
       <DocCodeBlock language="jsx" code={usageCode} />
+      <p>If you are using TypeScript, modify your tsconfig.json to enable extra size variants:</p>
+      <DocCodeBlock language="json" code={tsconfigCode} />
 
       <DocHeading>Preview</DocHeading>
 
@@ -131,8 +137,8 @@ export default function App() {
       <p>Compact:</p>
       <DocDemoBlock>
         <ThemeProvider theme={compactTheme}>
-          <LargeTextField label="Email" sx={{ mr: 2 }} />
-          <LargeTextField label="Password" sx={{ mr: 2 }} />
+          <TextField size="large" label="Email" sx={{ mr: 2 }} />
+          <TextField size="large" label="Password" sx={{ mr: 2 }} />
           <Button size="large" variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
@@ -141,11 +147,6 @@ export default function App() {
           </Button>
         </ThemeProvider>
       </DocDemoBlock>
-      <p>
-        <strong>Note:</strong> @mui/material does not provide large TextField variant. You have to
-        import it as a separate component from this package:
-      </p>
-      <DocCodeBlock language="jsx" code={largeTextFieldCode} />
     </DocContainer>
   );
 }
