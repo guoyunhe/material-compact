@@ -1,5 +1,7 @@
 # mui-material-compact
 
+Helper to create compact @mui/material theme
+
 ## Install
 
 ```bash
