@@ -77,15 +77,33 @@ const compactOptions: ThemeOptions = {
     },
     MuiAutocomplete: {
       styleOverrides: {
+        root: {
+          display: 'inline-flex',
+          verticalAlign: 'top',
+        },
         inputRoot: {
-          padding: '6px 14px',
-          lineHeight: 24 / 14,
-          height: 'auto',
+          paddingLeft: 0,
+          paddingTop: 0,
+          paddingBottom: 0,
+          '&.MuiOutlinedInput-root.MuiInputBase-sizeSmall': {
+            paddingLeft: 0,
+            paddingTop: 0,
+            paddingBottom: 0,
+            '': {
+              paddingLeft: 0,
+              paddingTop: 0,
+              paddingBottom: 0,
+            },
+          },
         },
         input: {
           padding: '6px 14px',
           lineHeight: 24 / 14,
           height: 'auto',
+          '&.MuiOutlinedInput-input.MuiInputBase-inputSizeSmall': {
+            lineHeight: 22 / 14,
+            padding: '4px 14px',
+          },
         },
       },
     },

@@ -81,10 +81,10 @@ export default function App() {
         <ThemeProvider theme={defaultTheme}>
           <TextField size="small" label="TextField" sx={{ mr: 2 }} />
           <Autocomplete
-            disablePortal
+            size="small"
             options={options}
-            renderInput={(params) => <TextField {...params} label="Autocomplete" />}
-            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+            renderInput={(params) => <TextField {...params} size="small" label="Autocomplete" />}
+            sx={{ display: 'inline-block', verticalAlign: 'top', width: '200px', mr: 2 }}
           />
           <Button size="small" variant="contained" sx={{ mr: 2 }}>
             Submit
@@ -99,10 +99,10 @@ export default function App() {
         <ThemeProvider theme={compactTheme}>
           <TextField size="small" label="TextField" sx={{ mr: 2 }} />
           <Autocomplete
-            disablePortal
+            size="small"
             options={options}
             renderInput={(params) => <TextField {...params} size="small" label="Autocomplete" />}
-            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+            sx={{ width: '200px', mr: 2 }}
           />
           <Button size="small" variant="contained" sx={{ mr: 2 }}>
             Submit
@@ -119,10 +119,9 @@ export default function App() {
         <ThemeProvider theme={defaultTheme}>
           <TextField label="TextField" sx={{ mr: 2 }} />
           <Autocomplete
-            disablePortal
             options={options}
             renderInput={(params) => <TextField {...params} label="Autocomplete" />}
-            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+            sx={{ display: 'inline-block', verticalAlign: 'top', width: '200px', mr: 2 }}
           />
           <Button variant="contained" sx={{ mr: 2 }}>
             Submit
@@ -135,10 +134,9 @@ export default function App() {
         <ThemeProvider theme={compactTheme}>
           <TextField label="TextField" sx={{ mr: 2 }} />
           <Autocomplete
-            disablePortal
             options={options}
             renderInput={(params) => <TextField {...params} label="Autocomplete" />}
-            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+            sx={{ display: 'inline-block', verticalAlign: 'top', width: '200px', mr: 2 }}
           />
           <Button variant="contained" sx={{ mr: 2 }}>
             Submit
@@ -153,10 +151,10 @@ export default function App() {
         <ThemeProvider theme={defaultTheme}>
           <TextField label="TextField" sx={{ mr: 2 }} />
           <Autocomplete
-            disablePortal
+            size="large"
             options={options}
             renderInput={(params) => <TextField {...params} size="large" label="Autocomplete" />}
-            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+            sx={{ display: 'inline-block', verticalAlign: 'top', width: '200px', mr: 2 }}
           />
           <Button size="large" variant="contained" sx={{ mr: 2 }}>
             Submit
@@ -171,10 +169,10 @@ export default function App() {
         <ThemeProvider theme={compactTheme}>
           <TextField size="large" label="TextField" sx={{ mr: 2 }} />
           <Autocomplete
-            disablePortal
+            size="large"
             options={options}
             renderInput={(params) => <TextField {...params} size="large" label="Autocomplete" />}
-            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+            sx={{ display: 'inline-block', verticalAlign: 'top', width: '200px', mr: 2 }}
           />
           <Button size="large" variant="contained" sx={{ mr: 2 }}>
             Submit

@@ -1,3 +1,9 @@
+declare module '@mui/material/Autocomplete' {
+  interface AutocompletePropsSizeOverrides {
+    large: true;
+  }
+}
+
 declare module '@mui/material/TextField' {
   interface TextFieldPropsSizeOverrides {
     large: true;
