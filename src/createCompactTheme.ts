@@ -76,33 +76,44 @@ const compactOptions: ThemeOptions = {
       },
     },
     MuiAutocomplete: {
+      variants: [
+        {
+          props: { size: 'large' },
+          style: {
+            input: {
+              '&.MuiOutlinedInput-input.MuiInputBase-input': {
+                fontSize: rem(16),
+                lineHeight: 26 / 16,
+                padding: '8px 14px',
+              },
+            },
+            '& .MuiOutlinedInput-notchedOutline > legend > span': {
+              fontSize: rem(16 * 0.8),
+            },
+          },
+        },
+      ],
       styleOverrides: {
         root: {
           display: 'inline-flex',
           verticalAlign: 'top',
         },
         inputRoot: {
-          paddingLeft: 0,
-          paddingTop: 0,
-          paddingBottom: 0,
-          '&.MuiOutlinedInput-root.MuiInputBase-sizeSmall': {
+          '&.MuiOutlinedInput-root.MuiInputBase-root': {
             paddingLeft: 0,
             paddingTop: 0,
             paddingBottom: 0,
-            '': {
-              paddingLeft: 0,
-              paddingTop: 0,
-              paddingBottom: 0,
-            },
           },
         },
         input: {
-          padding: '6px 14px',
-          lineHeight: 24 / 14,
-          height: 'auto',
-          '&.MuiOutlinedInput-input.MuiInputBase-inputSizeSmall': {
-            lineHeight: 22 / 14,
-            padding: '4px 14px',
+          '&.MuiOutlinedInput-input': {
+            padding: '6px 14px',
+            lineHeight: 24 / 14,
+            height: 'auto',
+            '&.MuiInputBase-inputSizeSmall': {
+              lineHeight: 22 / 14,
+              padding: '4px 14px',
+            },
           },
         },
       },
