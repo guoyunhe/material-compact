@@ -75,6 +75,20 @@ const compactOptions: ThemeOptions = {
         },
       },
     },
+    MuiAutocomplete: {
+      styleOverrides: {
+        inputRoot: {
+          padding: '6px 14px',
+          lineHeight: 24 / 14,
+          height: 'auto',
+        },
+        input: {
+          padding: '6px 14px',
+          lineHeight: 24 / 14,
+          height: 'auto',
+        },
+      },
+    },
     MuiInputLabel: {
       variants: [
         {

@@ -1,4 +1,4 @@
-import { Button, createTheme, TextField, ThemeProvider } from '@mui/material';
+import { Autocomplete, Button, createTheme, TextField, ThemeProvider } from '@mui/material';
 import { createCompactTheme } from 'mui-material-compact';
 import {
   DocCodeBlock,
@@ -33,6 +33,13 @@ const tsconfigCode = `
   }
 }
 `;
+
+const options = [
+  { label: 'The Shawshank Redemption', year: 1994 },
+  { label: 'The Godfather', year: 1972 },
+  { label: 'The Godfather: Part II', year: 1974 },
+  { label: 'The Dark Knight', year: 2008 },
+];
 
 export default function App() {
   const { actualTheme } = useDoc();
@@ -72,8 +79,13 @@ export default function App() {
       <p>Default:</p>
       <DocDemoBlock>
         <ThemeProvider theme={defaultTheme}>
-          <TextField size="small" label="Email" sx={{ mr: 2 }} />
-          <TextField size="small" label="Password" sx={{ mr: 2 }} />
+          <TextField size="small" label="TextField" sx={{ mr: 2 }} />
+          <Autocomplete
+            disablePortal
+            options={options}
+            renderInput={(params) => <TextField {...params} label="Autocomplete" />}
+            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+          />
           <Button size="small" variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
@@ -85,8 +97,13 @@ export default function App() {
       <p>Compact:</p>
       <DocDemoBlock>
         <ThemeProvider theme={compactTheme}>
-          <TextField size="small" label="Email" sx={{ mr: 2 }} />
-          <TextField size="small" label="Password" sx={{ mr: 2 }} />
+          <TextField size="small" label="TextField" sx={{ mr: 2 }} />
+          <Autocomplete
+            disablePortal
+            options={options}
+            renderInput={(params) => <TextField {...params} size="small" label="Autocomplete" />}
+            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+          />
           <Button size="small" variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
@@ -100,8 +117,13 @@ export default function App() {
       <p>Default:</p>
       <DocDemoBlock>
         <ThemeProvider theme={defaultTheme}>
-          <TextField label="Email" sx={{ mr: 2 }} />
-          <TextField label="Password" sx={{ mr: 2 }} />
+          <TextField label="TextField" sx={{ mr: 2 }} />
+          <Autocomplete
+            disablePortal
+            options={options}
+            renderInput={(params) => <TextField {...params} label="Autocomplete" />}
+            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+          />
           <Button variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
@@ -111,8 +133,13 @@ export default function App() {
       <p>Compact:</p>
       <DocDemoBlock>
         <ThemeProvider theme={compactTheme}>
-          <TextField label="Email" sx={{ mr: 2 }} />
-          <TextField label="Password" sx={{ mr: 2 }} />
+          <TextField label="TextField" sx={{ mr: 2 }} />
+          <Autocomplete
+            disablePortal
+            options={options}
+            renderInput={(params) => <TextField {...params} label="Autocomplete" />}
+            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+          />
           <Button variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
@@ -124,8 +151,13 @@ export default function App() {
       <p>Default:</p>
       <DocDemoBlock>
         <ThemeProvider theme={defaultTheme}>
-          <TextField label="Email" sx={{ mr: 2 }} />
-          <TextField label="Password" sx={{ mr: 2 }} />
+          <TextField label="TextField" sx={{ mr: 2 }} />
+          <Autocomplete
+            disablePortal
+            options={options}
+            renderInput={(params) => <TextField {...params} size="large" label="Autocomplete" />}
+            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+          />
           <Button size="large" variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
@@ -137,8 +169,13 @@ export default function App() {
       <p>Compact:</p>
       <DocDemoBlock>
         <ThemeProvider theme={compactTheme}>
-          <TextField size="large" label="Email" sx={{ mr: 2 }} />
-          <TextField size="large" label="Password" sx={{ mr: 2 }} />
+          <TextField size="large" label="TextField" sx={{ mr: 2 }} />
+          <Autocomplete
+            disablePortal
+            options={options}
+            renderInput={(params) => <TextField {...params} size="large" label="Autocomplete" />}
+            sx={{ display: 'inline-block', width: '200px', mr: 2 }}
+          />
           <Button size="large" variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
