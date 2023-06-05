@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 - 2023-06-05
+
+- Fixed `<TextField multiline />` styles
+- Reduced heading font sizes
+
 ## 1.2.0 - 2023-04-11
 
 - Added styles for `<Autocomplete/>`
