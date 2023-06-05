@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1 - 2023-06-05
+
+- Fixed adornment placement
+
 ## 1.3.0 - 2023-06-05
 
 - Fixed `<TextField multiline />` styles

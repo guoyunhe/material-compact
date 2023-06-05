@@ -61,9 +61,6 @@ const compactOptions: ThemeOptions = {
         {
           props: { size: 'large' },
           style: {
-            '& textarea': {
-              marginBottom: '6px',
-            },
             input: {
               fontSize: rem(16),
               lineHeight: 26 / 16,
@@ -72,6 +69,12 @@ const compactOptions: ThemeOptions = {
             '& .MuiOutlinedInput-notchedOutline > legend > span': {
               fontSize: rem(16 * 0.8),
             },
+            '&.MuiInputBase-multiline': {
+              fontSize: rem(16),
+              padding: 0,
+              paddingTop: 1,
+              paddingBottom: 1,
+            },
           },
         },
       ],
@@ -79,7 +82,9 @@ const compactOptions: ThemeOptions = {
         root: {
           verticalAlign: 'middle',
           fontSize: rem(14),
-          padding: 0,
+          '&.MuiInputBase-multiline': {
+            padding: 0,
+          },
         },
         input: {
           padding: '6px 14px',
