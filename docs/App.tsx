@@ -54,7 +54,7 @@ export default function App() {
     },
   });
   return (
-    <DocContainer>
+    <DocContainer maxWidth={960}>
       <DocHeader title={PACKAGE_NAME + '@' + PACKAGE_VERSION} />
       <p>Helper to create compact @mui/material theme</p>
 
@@ -86,6 +86,7 @@ export default function App() {
             renderInput={(params) => <TextField {...params} size="small" label="Autocomplete" />}
             sx={{ display: 'inline-block', verticalAlign: 'top', width: '200px', mr: 2 }}
           />
+          <TextField size="small" label="Multiline" multiline sx={{ mr: 2 }} />
           <Button size="small" variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
@@ -104,6 +105,7 @@ export default function App() {
             renderInput={(params) => <TextField {...params} size="small" label="Autocomplete" />}
             sx={{ width: '200px', mr: 2 }}
           />
+          <TextField size="small" label="Multiline" multiline sx={{ mr: 2 }} />
           <Button size="small" variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
@@ -123,6 +125,7 @@ export default function App() {
             renderInput={(params) => <TextField {...params} label="Autocomplete" />}
             sx={{ display: 'inline-block', verticalAlign: 'top', width: '200px', mr: 2 }}
           />
+          <TextField label="Multiline" multiline sx={{ mr: 2 }} />
           <Button variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
@@ -138,6 +141,7 @@ export default function App() {
             renderInput={(params) => <TextField {...params} label="Autocomplete" />}
             sx={{ display: 'inline-block', verticalAlign: 'top', width: '200px', mr: 2 }}
           />
+          <TextField label="Multiline" multiline sx={{ mr: 2 }} />
           <Button variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
@@ -156,6 +160,7 @@ export default function App() {
             renderInput={(params) => <TextField {...params} size="large" label="Autocomplete" />}
             sx={{ display: 'inline-block', verticalAlign: 'top', width: '200px', mr: 2 }}
           />
+          <TextField label="Multiline" multiline sx={{ mr: 2 }} />
           <Button size="large" variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>
@@ -174,6 +179,7 @@ export default function App() {
             renderInput={(params) => <TextField {...params} size="large" label="Autocomplete" />}
             sx={{ display: 'inline-block', verticalAlign: 'top', width: '200px', mr: 2 }}
           />
+          <TextField size="large" label="Multiline" multiline sx={{ mr: 2 }} />
           <Button size="large" variant="contained" sx={{ mr: 2 }}>
             Submit
           </Button>

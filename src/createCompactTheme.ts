@@ -43,6 +43,9 @@ const compactOptions: ThemeOptions = {
         {
           props: { size: 'large' },
           style: {
+            '& textarea': {
+              marginBottom: '6px',
+            },
             input: {
               fontSize: rem(16),
               lineHeight: 26 / 16,
@@ -58,6 +61,7 @@ const compactOptions: ThemeOptions = {
         root: {
           verticalAlign: 'middle',
           fontSize: rem(14),
+          padding: 0,
         },
         input: {
           padding: '6px 14px',
@@ -124,6 +128,11 @@ const compactOptions: ThemeOptions = {
           props: { size: 'large' },
           style: {
             fontSize: rem(16),
+            transform: `translate(14px, ${rem(9)}) scale(1)`,
+            '&.MuiInputLabel-shrink': {
+              fontSize: rem(16),
+              transform: `translate(14px, ${rem(-9)}) scale(0.8)`,
+            },
           },
         },
       ],
@@ -138,7 +147,7 @@ const compactOptions: ThemeOptions = {
         },
         sizeSmall: {
           fontSize: rem(14),
-          transform: `translate(14px, ${rem(4)}) scale(1)`,
+          transform: `translate(14px, ${rem(5)}) scale(1)`,
         },
       },
     },
