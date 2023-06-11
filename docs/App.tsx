@@ -1,5 +1,13 @@
 import { Speed } from '@mui/icons-material';
-import { Autocomplete, Button, createTheme, TextField, ThemeProvider } from '@mui/material';
+import {
+  Autocomplete,
+  Button,
+  createTheme,
+  TextField,
+  ThemeProvider,
+  ToggleButton,
+  ToggleButtonGroup,
+} from '@mui/material';
 import { createCompactTheme } from 'mui-material-compact';
 import {
   DocCodeBlock,
@@ -69,7 +77,7 @@ export default function App() {
 
       <DocHeading>Preview</DocHeading>
 
-      <DocHeading level={2}>Button &amp; TextField</DocHeading>
+      <DocHeading level={2}>TextField</DocHeading>
       <p>
         In default theme, TextField/Input is much higher than Button (same size value), which makes
         inline form ugly. In compact theme, we give TextField/Input the same height as Button. Also,
@@ -199,6 +207,122 @@ export default function App() {
           <Button size="large" variant="outlined">
             Reset
           </Button>
+        </ThemeProvider>
+      </DocDemoBlock>
+
+      <DocHeading level={2}>Button</DocHeading>
+
+      <DocHeading level={3}>Small</DocHeading>
+      <p>Default:</p>
+      <DocDemoBlock>
+        <ThemeProvider theme={defaultTheme}>
+          <Button size="small" variant="contained" sx={{ mr: 2 }}>
+            Contained
+          </Button>
+          <Button size="small" variant="outlined" sx={{ mr: 2 }}>
+            Outlined
+          </Button>
+          <Button size="small" variant="text" sx={{ mr: 2 }}>
+            Text
+          </Button>
+          <ToggleButtonGroup size="small">
+            <ToggleButton value="1">Toggle</ToggleButton>
+            <ToggleButton value="2">Button</ToggleButton>
+          </ToggleButtonGroup>
+        </ThemeProvider>
+      </DocDemoBlock>
+      <p>Compact:</p>
+      <DocDemoBlock>
+        <ThemeProvider theme={compactTheme}>
+          <Button size="small" variant="contained" sx={{ mr: 2 }}>
+            Contained
+          </Button>
+          <Button size="small" variant="outlined" sx={{ mr: 2 }}>
+            Outlined
+          </Button>
+          <Button size="small" variant="text" sx={{ mr: 2 }}>
+            Text
+          </Button>
+          <ToggleButtonGroup size="small">
+            <ToggleButton value="1">Toggle</ToggleButton>
+            <ToggleButton value="2">Button</ToggleButton>
+          </ToggleButtonGroup>
+        </ThemeProvider>
+      </DocDemoBlock>
+
+      <DocHeading level={3}>Medium</DocHeading>
+      <p>Default:</p>
+      <DocDemoBlock>
+        <ThemeProvider theme={defaultTheme}>
+          <Button size="medium" variant="contained" sx={{ mr: 2 }}>
+            Contained
+          </Button>
+          <Button size="medium" variant="outlined" sx={{ mr: 2 }}>
+            Outlined
+          </Button>
+          <Button size="medium" variant="text" sx={{ mr: 2 }}>
+            Text
+          </Button>
+          <ToggleButtonGroup size="medium">
+            <ToggleButton value="1">Toggle</ToggleButton>
+            <ToggleButton value="2">Button</ToggleButton>
+          </ToggleButtonGroup>
+        </ThemeProvider>
+      </DocDemoBlock>
+      <p>Compact:</p>
+      <DocDemoBlock>
+        <ThemeProvider theme={compactTheme}>
+          <Button size="medium" variant="contained" sx={{ mr: 2 }}>
+            Contained
+          </Button>
+          <Button size="medium" variant="outlined" sx={{ mr: 2 }}>
+            Outlined
+          </Button>
+          <Button size="medium" variant="text" sx={{ mr: 2 }}>
+            Text
+          </Button>
+          <ToggleButtonGroup size="medium">
+            <ToggleButton value="1">Toggle</ToggleButton>
+            <ToggleButton value="2">Button</ToggleButton>
+          </ToggleButtonGroup>
+        </ThemeProvider>
+      </DocDemoBlock>
+
+      <DocHeading level={3}>Lage</DocHeading>
+      <p>Default:</p>
+      <DocDemoBlock>
+        <ThemeProvider theme={defaultTheme}>
+          <Button size="large" variant="contained" sx={{ mr: 2 }}>
+            Contained
+          </Button>
+          <Button size="large" variant="outlined" sx={{ mr: 2 }}>
+            Outlined
+          </Button>
+          <Button size="large" variant="text" sx={{ mr: 2 }}>
+            Text
+          </Button>
+          <ToggleButtonGroup size="large">
+            <ToggleButton value="1">Toggle</ToggleButton>
+            <ToggleButton value="2">Button</ToggleButton>
+          </ToggleButtonGroup>
+        </ThemeProvider>
+      </DocDemoBlock>
+      <p>Compact:</p>
+      <DocDemoBlock>
+        <ThemeProvider theme={compactTheme}>
+          <Button size="large" variant="contained" sx={{ mr: 2 }}>
+            Contained
+          </Button>
+          <Button size="large" variant="outlined" sx={{ mr: 2 }}>
+            Outlined
+          </Button>
+          <Button size="large" variant="text" sx={{ mr: 2 }}>
+            Text
+          </Button>
+          <ToggleButtonGroup size="large">
+            <ToggleButton value="1">Toggle</ToggleButton>
+            <ToggleButton value="2">Button</ToggleButton>
+          </ToggleButtonGroup>
         </ThemeProvider>
       </DocDemoBlock>
     </DocContainer>

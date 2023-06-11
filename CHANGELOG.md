@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.0 - 2023-06-11
+
+- Changed `<ToggleButton/>` sizes
+- Changed heading font sizes
+
 ## 1.3.1 - 2023-06-05
 
 - Fixed adornment placement

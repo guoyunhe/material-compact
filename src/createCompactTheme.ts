@@ -13,16 +13,16 @@ const compactOptions: ThemeOptions = {
       fontSize: '2.25rem',
     },
     h3: {
-      fontSize: '1.75rem',
-    },
-    h4: {
       fontSize: '1.5rem',
     },
+    h4: {
+      fontSize: '1rem',
+    },
     h5: {
-      fontSize: '1.25rem',
+      fontSize: '0.75rem',
     },
     h6: {
-      fontSize: '1rem',
+      fontSize: '0.5rem',
     },
   },
   components: {
@@ -52,6 +52,27 @@ const compactOptions: ThemeOptions = {
           padding: '8px 22px',
         },
         outlinedSizeLarge: {
+          padding: '7px 21px',
+        },
+      },
+    },
+    MuiToggleButton: {
+      styleOverrides: {
+        root: {
+          fontSize: rem(14),
+          lineHeight: 24 / 14,
+          padding: '5px 13px',
+          textTransform: 'none',
+          fontWeight: 'normal',
+        },
+        sizeSmall: {
+          fontSize: rem(14),
+          lineHeight: 22 / 14,
+          padding: '3px 13px',
+        },
+        sizeLarge: {
+          fontSize: rem(16),
+          lineHeight: 26 / 16,
           padding: '7px 21px',
         },
       },
