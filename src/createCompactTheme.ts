@@ -77,6 +77,13 @@ const compactOptions: ThemeOptions = {
         },
       },
     },
+    MuiCardHeader: {
+      defaultProps: {
+        titleTypographyProps: {
+          variant: 'h3',
+        },
+      },
+    },
     MuiOutlinedInput: {
       variants: [
         {

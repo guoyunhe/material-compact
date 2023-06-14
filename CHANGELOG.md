@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.0 - 2023-06-14
+
+- Changed `<CardHeader/>`'s `title` from `h5` to `h3`
+
 ## 1.4.0 - 2023-06-11
 
 - Changed `<ToggleButton/>` sizes

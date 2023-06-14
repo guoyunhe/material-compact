@@ -2,6 +2,8 @@ import { Speed } from '@mui/icons-material';
 import {
   Autocomplete,
   Button,
+  Card,
+  CardHeader,
   createTheme,
   TextField,
   ThemeProvider,
@@ -288,7 +290,7 @@ export default function App() {
         </ThemeProvider>
       </DocDemoBlock>
 
-      <DocHeading level={3}>Lage</DocHeading>
+      <DocHeading level={3}>Large</DocHeading>
       <p>Default:</p>
       <DocDemoBlock>
         <ThemeProvider theme={defaultTheme}>
@@ -323,6 +325,24 @@ export default function App() {
             <ToggleButton value="1">Toggle</ToggleButton>
             <ToggleButton value="2">Button</ToggleButton>
           </ToggleButtonGroup>
+        </ThemeProvider>
+      </DocDemoBlock>
+
+      <DocHeading level={2}>Card</DocHeading>
+      <p>Default:</p>
+      <DocDemoBlock>
+        <ThemeProvider theme={defaultTheme}>
+          <Card>
+            <CardHeader title="Title" subheader="Sub header" />
+          </Card>
+        </ThemeProvider>
+      </DocDemoBlock>
+      <p>Compact:</p>
+      <DocDemoBlock>
+        <ThemeProvider theme={compactTheme}>
+          <Card>
+            <CardHeader title="Title" subheader="Sub header" />
+          </Card>
         </ThemeProvider>
       </DocDemoBlock>
     </DocContainer>
