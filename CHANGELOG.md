@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.0 - 2023-06-23
+
+- Added `responsiveFontSizes()` wrapper with `factor: 2`
+
 ## 1.5.0 - 2023-06-14
 
 - Changed `<CardHeader/>`'s `title` from `h5` to `h3`
