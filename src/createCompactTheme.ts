@@ -1,4 +1,4 @@
-import { createTheme, Theme, ThemeOptions } from '@mui/material';
+import { createTheme, responsiveFontSizes, Theme, ThemeOptions } from '@mui/material';
 import { deepmerge } from '@mui/utils';
 import { rem } from './helpers';
 
@@ -206,5 +206,7 @@ const compactOptions: ThemeOptions = {
 };
 
 export function createCompactTheme(options: ThemeOptions = {}, ...args: object[]): Theme {
-  return createTheme(deepmerge(compactOptions, options), ...args);
+  return responsiveFontSizes(createTheme(deepmerge(compactOptions, options), ...args), {
+    factor: 2,
+  });
 }
