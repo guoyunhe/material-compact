@@ -60,27 +60,27 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@guoyunhe/react-lib-scripts": "^1.4.0",
-    "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.13.5",
+    "@mui/icons-material": "^5.14.1",
+    "@mui/material": "^5.14.1",
     "@testing-library/dom": "^9.3.1",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@tsconfig/vite-react": "^2.0.0",
-    "@types/jest": "^29.5.2",
-    "@types/node": "^18.16.18",
-    "@types/react": "^18.2.13",
-    "@types/react-dom": "^18.2.6",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.2",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-doc-ui": "^1.0.1",
     "react-dom": "^18.2.0",
-    "typescript": "^4.9.5"
+    "typescript": "^5.1.6"
   },
   "peerDependencies": {
     "@mui/material": "^5.0.0",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@mui/utils": "^5.13.1"
+    "@mui/utils": "^5.14.1"
   }
 }
