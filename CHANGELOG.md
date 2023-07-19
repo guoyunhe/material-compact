@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.7.0 - 2023-07-19
+
+- Changed `<DialogTitle/>`'s `variant` from `h5` to `h3`
+
 ## 1.6.0 - 2023-06-23
 
 - Added `responsiveFontSizes()` wrapper with `factor: 2`

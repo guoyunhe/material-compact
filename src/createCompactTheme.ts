@@ -84,6 +84,11 @@ const compactOptions: ThemeOptions = {
         },
       },
     },
+    MuiDialogTitle: {
+      defaultProps: {
+        variant: 'h3',
+      },
+    },
     MuiOutlinedInput: {
       variants: [
         {
