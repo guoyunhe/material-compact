@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.0 - 2023-07-31
+
+- Changed `body1` fontSize to `14px` and `body2` fontSize to `12px`
+
 ## 1.7.0 - 2023-07-19
 
 - Changed `<DialogTitle/>`'s `variant` from `h5` to `h3`
