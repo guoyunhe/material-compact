@@ -24,6 +24,12 @@ const compactOptions: ThemeOptions = {
     h6: {
       fontSize: '0.5rem',
     },
+    body1: {
+      fontSize: '14px',
+    },
+    body2: {
+      fontSize: '12px',
+    },
   },
   components: {
     MuiButton: {
