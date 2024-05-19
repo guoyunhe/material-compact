@@ -1,18 +1,18 @@
-# mui-material-compact
+# material-compact
 
 Helper to create compact @mui/material theme
 
 ## Install
 
 ```bash
-npm i mui-material-compact
+npm i material-compact
 ```
 
 ## Usage
 
 ```tsx
 import { ThemeProvider, TextField } from '@mui/material';
-import { createCompactTheme } from 'mui-material-compact';
+import { createCompactTheme } from 'material-compact';
 
 const theme = createCompactTheme({
   // Your theme options...
@@ -30,9 +30,9 @@ If you are using TypeScript, modify your tsconfig.json to enable extra size vari
 ```json
 {
   "compilerOptions": {
-    "types": ["mui-material-compact/overrides"]
+    "types": ["material-compact/overrides"]
   }
 }
 ```
 
-👉 [check online preview](https://guoyunhe.github.io/mui-material-compact/)
+👉 [check online preview](https://guoyunhe.github.io/material-compact/)

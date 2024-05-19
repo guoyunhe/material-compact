@@ -10,7 +10,7 @@ import {
   ToggleButton,
   ToggleButtonGroup,
 } from '@mui/material';
-import { createCompactTheme } from 'mui-material-compact';
+import { createCompactTheme } from 'material-compact';
 import {
   DocCodeBlock,
   DocContainer,
@@ -20,11 +20,11 @@ import {
   useDoc,
 } from 'react-doc-ui';
 
-const installScript = 'npm i mui-material-compact';
+const installScript = 'npm i material-compact';
 
 const usageCode = `
 import { ThemeProvider } from '@mui/material';
-import { createCompactTheme } from 'mui-material-compact';
+import { createCompactTheme } from 'material-compact';
 
 const theme = createCompactTheme({
   // Your theme options...
@@ -39,7 +39,7 @@ const tsconfigCode = `
 {
   "compilerOptions": {
     "types": [
-      "mui-material-compact/overrides"
+      "material-compact/overrides"
     ]
   }
 }

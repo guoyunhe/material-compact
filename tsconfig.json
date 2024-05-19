@@ -2,7 +2,7 @@
   "extends": "@tsconfig/vite-react/tsconfig.json",
   "compilerOptions": {
     "paths": {
-      "mui-material-compact": ["./src"]
+      "material-compact": ["./src"]
     },
     "types": [
       "node",
