@@ -27,9 +27,9 @@
     "name": "Guo Yunhe",
     "email": "i@guoyunhe.me"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "typings": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "CHANGELOG.md",
@@ -38,49 +38,55 @@
     "overrides.d.ts"
   ],
   "scripts": {
-    "build": "react-lib-scripts build",
-    "format": "react-lib-scripts format",
-    "lint": "react-lib-scripts lint",
-    "start": "react-lib-scripts start",
-    "test": "react-lib-scripts test",
-    "watch": "react-lib-scripts watch",
-    "deploy": "gh-pages -d build"
+    "build": "rive build",
+    "build:watch": "rive build --watch",
+    "lint": "rive lint",
+    "lint:fix": "rive lint --fix",
+    "start": "rive start",
+    "test": "rive test",
+    "test:ui": "rive test --ui",
+    "test:watch": "rive test --watch"
   },
-  "prettier": {
-    "printWidth": 100,
-    "singleQuote": true
-  },
+  "prettier": "prettier-config-rive",
   "eslintConfig": {
-    "extends": "@guoyunhe/react-lib-scripts"
+    "extends": "eslint-config-rive/react"
   },
-  "jest": {
-    "preset": "@guoyunhe/react-lib-scripts"
+  "stylelint": {
+    "extends": "stylelint-config-rive"
+  },
+  "dependencies": {
+    "@mui/utils": "^5.15.14",
+    "classnames": "^2.5.1"
   },
   "devDependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-    "@guoyunhe/react-lib-scripts": "^1.5.0",
+    "@mdx-js/react": "^3.0.1",
     "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.18",
     "@testing-library/dom": "^9.3.4",
-    "@testing-library/react": "^14.3.1",
+    "@testing-library/react": "^15.0.7",
     "@testing-library/user-event": "^14.5.2",
     "@tsconfig/vite-react": "^2.0.1",
-    "@types/jest": "^29.5.12",
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "gh-pages": "^5.0.0",
     "react": "^18.3.1",
-    "react-doc-ui": "^1.0.1",
+    "react-doc-ui": "^2.2.6",
     "react-dom": "^18.3.1",
-    "typescript": "^5.4.5"
+    "rive": "^2.0.33",
+    "typescript": "^5.4.5",
+    "whatwg-fetch": "^3.6.20"
   },
   "peerDependencies": {
     "@mui/material": "^5.0.0",
-    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+    "react": "^18.0.0 || ^17.0.0 || ^16.8.0"
   },
-  "dependencies": {
-    "@mui/utils": "^5.15.14"
+  "rive": {
+    "template": "react",
+    "doc": {
+      "basename": "/material-compact/"
+    }
   }
 }
