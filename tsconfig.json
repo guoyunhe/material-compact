@@ -4,7 +4,7 @@
       "material-compact": ["./src"]
     },
     "types": ["node", "jest", "rive/globals"],
-    "target": "es2015",
+    "target": "es2017",
     "lib": ["esnext", "dom", "dom.iterable"],
     "allowJs": true,
     "checkJs": false,
